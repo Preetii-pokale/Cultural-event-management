@@ -1,0 +1,21 @@
+.contact-body {
+  padding: 48px calc(var(--sb) + 48px);
+  max-width: 500px;
+}
+.contact-info {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.contact-info a {
+  color: var(--gold);
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-body { padding-left: calc(var(--sb) + 14px); padding-right: 14px; }
+}

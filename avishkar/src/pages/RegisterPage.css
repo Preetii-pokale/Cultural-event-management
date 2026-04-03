@@ -1,0 +1,42 @@
+.reg-body { padding: 48px calc(var(--sb) + 48px) 64px; }
+.reg-inner { max-width: 680px; margin: 0 auto; }
+.reg-intro { font-size: 14px; color: var(--text-dim); line-height: 1.72; margin-bottom: 30px; }
+.reg-list { display: flex; flex-direction: column; gap: 12px; }
+.reg-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(11, 24, 48, 0.55);
+  border: 1px solid rgba(201, 162, 39, 0.1);
+  border-radius: 14px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background 0.22s, border-color 0.22s, transform 0.22s;
+}
+.reg-item:hover {
+  background: rgba(11, 24, 48, 0.85);
+  border-color: rgba(201, 162, 39, 0.32);
+  transform: translateX(5px);
+}
+.ri-icon { font-size: 26px; flex-shrink: 0; }
+.ri-info { flex: 1; }
+.ri-name {
+  font-family: "Cinzel", serif;
+  font-size: 13px;
+  color: var(--text);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.ri-sub { font-size: 11.5px; color: var(--text-dim); }
+.ri-arr {
+  color: var(--gold-dim);
+  font-size: 20px;
+  margin-left: auto;
+  transition: color 0.2s, transform 0.2s;
+}
+.reg-item:hover .ri-arr { color: var(--gold); transform: translateX(4px); }
+
+@media (max-width: 768px) {
+  .reg-body { padding-left: calc(var(--sb) + 14px); padding-right: 14px; }
+}
